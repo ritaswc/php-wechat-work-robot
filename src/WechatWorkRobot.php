@@ -14,6 +14,13 @@ class WechatWorkRobot
         $this->key = (string)$key;
     }
 
+    /**
+     * Send Text Message
+     * @param string $text
+     * @param array $mentionedList
+     * @param array $mentionedMobileList
+     * @return array|bool|null
+     */
     public function sendText($text, $mentionedList = [], $mentionedMobileList = [])
     {
         $data = [
@@ -31,6 +38,11 @@ class WechatWorkRobot
         return $this->request($data);
     }
 
+    /**
+     * Send Markdown Message
+     * @param string $markdownText
+     * @return array|bool|null
+     */
     public function sendMarkDown($markdownText)
     {
         return $this->request([
@@ -41,6 +53,11 @@ class WechatWorkRobot
         ]);
     }
 
+    /**
+     * Send Articles, title picture with link
+     * @param array $articles
+     * @return array|bool|null
+     */
     public function sendNews($articles = [])
     {
         return $this->request([
@@ -51,9 +68,14 @@ class WechatWorkRobot
         ]);
     }
 
+    /**
+     * Send Image Message
+     * @param string $image /local/path/image.png https://blogoss.yinghualuo.cn/blog/2019/05/wechatpay.png
+     * @return array|bool|null
+     */
     public function sendImage($image)
     {
-        if (0 === strpos($image, 'http')) {
+        if (strpos($image, '://') > 0) {
             return $this->sendUrlImage($image);
         }
         return $this->sendFileImage($image);
