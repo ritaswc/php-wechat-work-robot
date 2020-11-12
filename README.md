@@ -41,7 +41,7 @@ $robot->sendNews([
 [Charles的小星球](https://blog.yinghualuo.cn)
 
 ## Dingtalk Document
-[自定义机器人开发](https://ding-doc.dingtalk.com/document#/org-dev-guide/qf2nxq)
+[自定义机器人开发](https://work.weixin.qq.com/help?person_id=1&doc_id=13376)
 
 ## License
 MIT
