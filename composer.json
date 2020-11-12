@@ -1,0 +1,19 @@
+{
+    "name": "ritaswc/wechat-work-robot",
+    "description": "Easy to send WechatWork Robot Message",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "charles",
+            "email": "ritaswc@163.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Ritaswc\\WechatWorkRobot\\" : "src/"
+        }
+    }
+}
