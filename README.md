@@ -47,6 +47,4 @@ $robot->sendNews([
 MIT
 
 ## Sponsor
-![wechatpay](https://raw.githubusercontent.com/ritaswc/php-wechat-work-robot/main/wechatpay.png)
-
-![alipay](https://raw.githubusercontent.com/ritaswc/php-wechat-work-robot/main/alipay.png)
+![QrCode](https://blog.yinghualuo.cn/blog/2020/11/sponsor.png)
